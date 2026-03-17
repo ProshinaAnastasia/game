@@ -1,0 +1,3 @@
+/Users/kobelev/labs_ronaldo/lab78/build/CMakeFiles/snake.dir
+/Users/kobelev/labs_ronaldo/lab78/build/CMakeFiles/edit_cache.dir
+/Users/kobelev/labs_ronaldo/lab78/build/CMakeFiles/rebuild_cache.dir
