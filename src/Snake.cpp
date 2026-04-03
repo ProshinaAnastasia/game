@@ -1,5 +1,5 @@
-#include "../include/Snake.hpp"
-#include "../include/Food.hpp"
+#include "/workspaces/game/include/Snake.hpp"
+#include "/workspaces/game/include/Food.hpp"
 #include <cmath>
 
 // Реализация метода-конструктора сегмента
