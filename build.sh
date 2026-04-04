@@ -41,11 +41,7 @@ else
     echo "SFML уже установлена в $SFML_INSTALL_DIR"
 fi
 
-# Подчистка CMakeLists.txt от старых путей macOS (если нужно)
-if grep -q "/opt/homebrew" CMakeLists.txt; then
-    echo "Удаляю устаревшие пути macOS из CMakeLists.txt..."
-    sed -i.bak '/\/opt\/homebrew/d' CMakeLists.txt
-fi
+
 
 # Убедимся, что CMakeLists.txt использует правильную SFML
 # Добавляем подсказку для find_package, если ещё нет
@@ -71,3 +67,13 @@ make -j$(nproc)
 echo "Сборка успешно завершена!"
 chmod +x snake
 echo "Запустите игру: LD_LIBRARY_PATH=/usr/local/lib ./snake"
+
+
+'''
+cd /workspaces/game
+rm -rf build
+mkdir build && cd build
+cmake ..
+make
+./snake   # теперь должно работать без LD_LIBRARY_PATH
+'''
